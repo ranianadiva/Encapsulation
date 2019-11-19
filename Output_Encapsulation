@@ -1,0 +1,72 @@
+Latihan 1
+Penumpang bus sekarang adalah : 5
+Penumpang bus maksimal adalah : 15
+Penumpang bus sekarang adalah : 10
+Penumpang bus maksimal adalah : 15
+Penumpang bus sekarang adalah : 8
+Penumpang bus maksimal adalah : 15
+Penumpang bus sekarang adalah : 13
+Penumpang bus maksimal adalah : 15
+BUILD SUCCESSFUL (total time: 0 seconds)
+
+Latihan 2
+Penumpang bus sekarang adalah : 0
+Penumpang maksimal seharusya : 40
+Penumpang bus sekarang adalah : 15
+Penumpang maksimal seharusya : 40
+Penumpang bus sekarang adalah : 20
+Penumpang maksimal seharusya : 40
+Penumpang melebihi kuota
+Penumpang bus sekarang adalah : 20
+Penumpang maksimal seharusya : 40
+BUILD SUCCESSFUL (total time: 0 seconds)
+
+Latihan 3
+nama : Rania
+absen : 37
+addres : Malang
+BUILD SUCCESSFUL (total time: 0 seconds)
+
+Latihan 4
+Masukkan password 
+24
+Password anda benar 
+Penumpang bus sekarang adalah : 0
+Penumpang maksimal yang seharusnya adalah : 5
+rata rata bearat : 0.0
+Penumpang bus sekarang adalah : 2
+Penumpang maksimal yang seharusnya adalah : 5
+rata rata bearat : 5.0
+Penumpang bus sekarang adalah : 3
+Penumpang maksimal yang seharusnya adalah : 5
+rata rata bearat : 11.299999999999999
+Penumpang bus sekarang adalah : 5
+Penumpang maksimal yang seharusnya adalah : 5
+rata rata bearat : 9.52
+Penumpang melebihi kuota 
+Penumpang bus sekarang adalah : 5
+Penumpang maksimal yang seharusnya adalah : 5
+rata rata bearat : 11.099999999999998
+BUILD SUCCESSFUL (total time: 19 seconds)
+
+Tugas Praktikum 1
+Masukkan password : 20
+password benar
+penumpang : 5
+rata-rata berat : 12.0
+penumpang melebihi kapasitas
+penumpang : 5
+rata-rata berat : 20.0
+penumpang : 8
+rata-rata berat : 18.75
+BUILD SUCCESSFUL (total time: 14 seconds)
+
+Tugas Praktikum 2
+Masukkan jari jari 
+20
+Jari jari : 20.0
+Diameter : 40.0
+Lua permukaan : 5026.548245743669
+Volume : 33510.32163829113
+BUILD SUCCESSFUL (total time: 9 seconds)
+
