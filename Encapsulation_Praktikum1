@@ -1,0 +1,93 @@
+package Encapsulation;
+
+public class TugasPratikum_1 {
+
+    public int penumpang;
+    public int maxpenumpang;
+    public double berat;
+    public double average;
+    public double ratarata;
+
+    public TugasPratikum_1(int maxpenumpang) {
+        this.maxpenumpang = maxpenumpang;
+        penumpang = 0;
+    }
+
+    public void addpenumpang(int penumpang) {
+        int temp;
+        temp = this.penumpang + penumpang;
+        if (temp > maxpenumpang) {
+            System.out.println("penumpang melebihi kapasitas");
+        } else {
+            this.penumpang = temp;
+        }
+    }
+
+    public void getpenumpang(int password) {
+        if (password == 20) {
+            System.out.println("password benar");
+        } else {
+            System.out.println("password salah");
+        }
+    }
+
+    public void cetakpenumpang() {
+        System.out.println("penumpang bus sekarang :" + penumpang);
+        System.out.println("maksimum penumpang yang seharusnya adalah :" + maxpenumpang);
+
+    }
+
+    public void addberat(int berat) {
+        double y;
+        y = this.berat + berat;
+        this.berat = (int) y;
+
+    }
+
+    public void getAverage() {
+        this.ratarata = this.berat / this.penumpang;
+    }
+
+    public void cetak() {
+        System.out.println("penumpang : " + this.penumpang);
+        System.out.println("rata-rata berat : " + this.ratarata);
+    }
+
+}
+
+//Ini kelas panggil
+
+package Encapsulation;
+
+import java.util.Scanner;
+
+public class PanggilTugasPratikum_1 {
+    public static void main(String[] abc) {
+        TugasPratikum_1 Bus = new TugasPratikum_1(10);
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Masukkan password : ");
+        int x = input.nextInt();
+        Bus.getpenumpang(x);
+            
+         //penambahan penumpang
+            Bus.addpenumpang(5);
+            Bus.addberat(60);
+            Bus.getAverage();
+            Bus.cetak();
+         //penambahan penumpang
+            Bus.addpenumpang(9);
+            Bus.addberat(40);
+            Bus.getAverage();
+            Bus.cetak();
+         //penambahan penumpang
+            Bus.addpenumpang (3);
+            Bus.addberat(50);
+            Bus.getAverage();
+            Bus.cetak();
+
+            
+    }
+    
+}
+
