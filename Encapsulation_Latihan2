@@ -1,0 +1,51 @@
+
+package Encapsulation;
+
+
+public class Latihan2A {
+
+    private int penumpang;
+    private int maxPenumpang;
+
+    public Latihan2A(int maxpenumpang) {
+        this.maxPenumpang = maxpenumpang;
+        penumpang = 0;
+    }
+
+    public void addPenumpang(int penumpang) {
+        int temp;
+        temp = this.penumpang + penumpang;
+        if (temp >= maxPenumpang) {
+            System.out.println("Penumpang melebihi kuota");
+        } else {
+            this.penumpang = temp;
+        }
+    }
+
+    public void cetak() {
+        System.out.println("Penumpang bus sekarang adalah : " + penumpang);
+        System.out.println("Penumpang maksimal seharusya : " + maxPenumpang);       
+    }
+}
+
+//ini kelas panggil
+package Encapsulation;
+
+public class Latihan2B {
+
+    public static void main(String[] args) {
+        Latihan2A busBesar = new Latihan2A(40);
+        busBesar.cetak();
+
+        //penambahan penumpang
+        busBesar.addPenumpang(15);
+        busBesar.cetak();
+
+        busBesar.addPenumpang(5);
+        busBesar.cetak();
+
+        busBesar.addPenumpang(26);
+        busBesar.cetak();
+
+    }
+}
