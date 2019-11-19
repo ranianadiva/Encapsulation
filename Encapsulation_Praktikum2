@@ -1,0 +1,50 @@
+package Encapsulation;
+
+public class Bola {
+
+    public double jarijari;
+
+    public void setJarijari(double jarijari) {
+        this.jarijari = jarijari;
+    }
+
+    public void showDiameter() {
+        double diameter = this.jarijari * 2;
+        System.out.println("Diameter : " + diameter);
+    }
+
+    public void showLuasPermukaan() {
+        double luaspermukaan = (4 * Math.PI * Math.pow(jarijari, 2));
+        System.out.println("Lua permukaan : " + luaspermukaan);
+    }
+
+    public void showVolume() {
+        double volume = (4 * Math.PI * Math.pow(jarijari, 3)) / 3;
+        System.out.println("Volume : " + volume);
+    }
+
+    public void cetak() {
+        System.out.println("Jari jari : " + this.jarijari);
+    }
+}
+
+//Ini kelas panggil
+package Encapsulation;
+
+import java.util.Scanner;
+
+public class PanggilBola {
+
+    public static void main(String[] args) {
+        Bola sepak = new Bola();
+        Scanner tik = new Scanner(System.in);
+        System.out.println("Masukkan jari jari ");
+        double jarijari = tik.nextDouble();
+
+        sepak.setJarijari(jarijari);
+        sepak.cetak();
+        sepak.showDiameter();
+        sepak.showLuasPermukaan();
+        sepak.showVolume();
+    }
+}
