@@ -1,0 +1,49 @@
+package Encapsulation;
+
+public class Latihan3A {
+
+    private String nama;
+    private String addres;
+    private int absen;
+
+    public int getAbsen() {
+        return absen;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public String getAddres() {
+        return addres;
+    }
+
+    public void setAbsen(int newAbsen) {
+        absen = newAbsen;
+    }
+
+    public void setNama(String newNama) {
+        nama = newNama;
+    }
+
+    public void setAddres(String newAddres) {
+        addres = newAddres;
+    }
+}
+
+//ini kelas panggil
+package Encapsulation;
+
+public class Latihan3B {
+
+    public static void main(String[] args) {
+        Latihan3A siswa = new Latihan3A();
+        siswa.setNama("Rania");
+        siswa.setAbsen(37);
+        siswa.setAddres("Malang");
+
+        System.out.println("nama : " + siswa.getNama());
+        System.out.println("absen : " + siswa.getAbsen());
+        System.out.println("addres : " + siswa.getAddres());
+    }
+}
