@@ -1,0 +1,89 @@
+
+package Encapsulation;
+public class Latihan4A {
+    public int penumpang;
+    public int maxPenumpang;
+    public double berat;
+    public double ratarata;
+    
+    public Latihan4A (int maxpenumpang){
+        this.maxPenumpang = maxpenumpang;
+        penumpang = 0;
+    }
+        public void addpenumpang(int penumpang){
+        int bilangan;
+        bilangan = this.penumpang+penumpang;
+        if (bilangan > maxPenumpang)
+        {
+            System.out.println("Penumpang melebihi kuota "); 
+        }
+        else{
+            this.penumpang=bilangan;
+        }
+    }
+        public void getpenumpang (int password){
+            if (password==24)
+            {
+                System.out.println("Password anda benar ");
+            }
+            else {
+                System.out.println("Password anda salah ");
+            }
+            
+        }
+        public void addBerat(double berat){
+            double x = this.berat + berat;
+            this.berat = x;
+        }
+        
+        public void getAverage() {
+            this.ratarata = this.berat / this.penumpang;
+        }        
+        public void cetakpenumpang(){
+            System.out.println("Penumpang bus sekarang adalah : " + penumpang );
+            System.out.println("Penumpang maksimal yang seharusnya adalah : " + maxPenumpang);
+            System.out.println("rata rata bearat : " + this.ratarata);
+        }    
+        }
+        
+        //Ini kelas panggil
+        package Encapsulation;
+
+import java.util.Scanner;
+
+public class Latihan4B {
+
+    public static void main(String[] args) {
+        Latihan4A Bus = new Latihan4A(5);
+
+        Scanner tik = new Scanner(System.in);
+        System.out.println("Masukkan password ");
+        int x = tik.nextInt();
+        Bus.getpenumpang(x);
+
+        Bus.cetakpenumpang();
+
+        Bus.addpenumpang(2);
+        Bus.addBerat(10.0);
+        Bus.getAverage();
+        Bus.cetakpenumpang();
+
+        Bus.addpenumpang(1);
+        Bus.addBerat(23.9);
+        Bus.getAverage();
+        Bus.cetakpenumpang();
+
+        Bus.addpenumpang(2);
+        Bus.addBerat(13.7);
+        Bus.getAverage();
+        Bus.cetakpenumpang();
+
+        Bus.addpenumpang(2);
+        Bus.addBerat(7.9);
+        Bus.getAverage();
+        Bus.cetakpenumpang();
+    }
+}
+
+        
+
